@@ -2489,7 +2489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbcb4404aa4f944fb8b12b57a696c6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToSpin: {fileID: 0}
+  ObjectToSpin: {fileID: 5745372440252123173}
+  speed: 5000
 --- !u!23 &5865565085393541038
 MeshRenderer:
   m_ObjectHideFlags: 0
