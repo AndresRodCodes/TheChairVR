@@ -44,7 +44,6 @@ public class SpinChair : MonoBehaviour
         Debug.Log("Grip Value: " + gripValue);
 
         // Rotate Chair with grip value
-        //ObjectToSpin.transform.rotation = Quaternion.Euler(0, gripValue * 360, 0);
         ObjectToSpin.transform.Rotate(0, (float)(gripValue * speed * Time.deltaTime), 0);
     }
 }
