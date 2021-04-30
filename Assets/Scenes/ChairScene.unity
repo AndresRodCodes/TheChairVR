@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 312523947}
   - component: {fileID: 312523946}
   - component: {fileID: 312523945}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RightHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -822,7 +822,8 @@ GameObject:
   - component: {fileID: 1451839128}
   - component: {fileID: 1451839129}
   - component: {fileID: 1451839130}
-  m_Layer: 0
+  - component: {fileID: 1451839131}
+  m_Layer: 7
   m_Name: XR Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1005,6 +1006,19 @@ MonoBehaviour:
       m_SingletonActionBindings: []
     m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+--- !u!114 &1451839131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451839122}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7d82dc73f273164daf893dbd6511a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chair: {fileID: 5745372440252123173}
 --- !u!1 &1749760643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,7 +1028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1749760644}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Camera Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1050,7 +1064,7 @@ GameObject:
   - component: {fileID: 1829575563}
   - component: {fileID: 1829575562}
   - component: {fileID: 1829575561}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1075,12 +1089,12 @@ MonoBehaviour:
     m_Name: Main Camera - TPD - Position
     m_Type: 0
     m_ExpectedControlType: Vector3
-    m_Id: 
+    m_Id: a4b0ad78-1067-4f06-9d79-f73371b2aafe
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 
+      m_Id: 871a2833-aff3-4d1e-8388-434fb8e24243
       m_Path: <XRHMD>/centerEyePosition
       m_Interactions: 
       m_Processors: 
@@ -1091,12 +1105,12 @@ MonoBehaviour:
     m_Name: Main Camera - TPD - Rotation
     m_Type: 0
     m_ExpectedControlType: Quaternion
-    m_Id: 
+    m_Id: 2c3df5a8-966e-4e0f-865b-5fb2d1025ee4
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 
+      m_Id: 96c2cf5a-416d-475b-a945-cb1e13d4ec5c
       m_Path: <XRHMD>/centerEyeRotation
       m_Interactions: 
       m_Processors: 
@@ -1224,7 +1238,7 @@ GameObject:
   - component: {fileID: 2108411223}
   - component: {fileID: 2108411222}
   - component: {fileID: 2108411221}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1732,7 +1746,7 @@ GameObject:
   - component: {fileID: 1431133612527663335}
   - component: {fileID: 8683095619400371494}
   - component: {fileID: 6773155018481551508}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1750,7 +1764,7 @@ GameObject:
   - component: {fileID: 6592045032746653738}
   - component: {fileID: 2272201907225699622}
   - component: {fileID: 5712592136261397041}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1782,7 +1796,7 @@ GameObject:
   - component: {fileID: 7875666471449205053}
   - component: {fileID: 3985149474790556897}
   - component: {fileID: 2722568785588113626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1800,7 +1814,7 @@ GameObject:
   - component: {fileID: 2522227083471840133}
   - component: {fileID: 8150943689928840966}
   - component: {fileID: 3914492883349129739}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1873,7 +1887,7 @@ GameObject:
   - component: {fileID: 6069751815127987081}
   - component: {fileID: 4405657088195258666}
   - component: {fileID: 92209878155262052}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1891,7 +1905,7 @@ GameObject:
   - component: {fileID: 3016645597806931847}
   - component: {fileID: 4933003860946129939}
   - component: {fileID: 2783332586057267280}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2068,7 +2082,7 @@ GameObject:
   - component: {fileID: 4504769587491377483}
   - component: {fileID: 5593891190492154916}
   - component: {fileID: 8084917319542563565}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2108,7 +2122,7 @@ GameObject:
   - component: {fileID: 3814248002717327072}
   - component: {fileID: 5324061074064262723}
   - component: {fileID: 4602526656038982452}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2126,7 +2140,7 @@ GameObject:
   - component: {fileID: 6389042371733202297}
   - component: {fileID: 8569270113196098770}
   - component: {fileID: 4984241436516592783}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2205,7 +2219,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306250345021639478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2300,7 +2314,7 @@ GameObject:
   - component: {fileID: 8167437565481221103}
   - component: {fileID: 7758907722595886171}
   - component: {fileID: 7336648048777958595}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2395,7 +2409,7 @@ GameObject:
   - component: {fileID: 4616058232847983734}
   - component: {fileID: 3579819526283359235}
   - component: {fileID: 1018914490807761638}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2470,7 +2484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4967603875788640927}
   - component: {fileID: 5745372440252123174}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Office Chair37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2490,6 +2504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToSpin: {fileID: 5745372440252123173}
+  player: {fileID: 1451839122}
   speed: 5000
 --- !u!23 &5865565085393541038
 MeshRenderer:
@@ -2586,7 +2601,7 @@ GameObject:
   - component: {fileID: 510583176552108352}
   - component: {fileID: 59840779901299523}
   - component: {fileID: 5865565085393541038}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2708,7 +2723,7 @@ GameObject:
   - component: {fileID: 7262356785103792791}
   - component: {fileID: 7474751658216091229}
   - component: {fileID: 2571327830000801719}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}

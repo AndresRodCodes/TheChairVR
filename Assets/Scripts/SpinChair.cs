@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class SpinChair : MonoBehaviour
 {
     public GameObject ObjectToSpin;
+    public GameObject player;
     public float speed;
 
     private UnityEngine.XR.InputDevice leftController;
@@ -15,6 +16,7 @@ public class SpinChair : MonoBehaviour
     void Start()
     {
         GetControllers();
+        AlignPlayerToChair();
     }
 
     // Update is called once per frame
@@ -45,5 +47,12 @@ public class SpinChair : MonoBehaviour
 
         // Rotate Chair with grip value
         ObjectToSpin.transform.Rotate(0, (float)(gripValue * speed * Time.deltaTime), 0);
+        player.transform.Rotate(0, (float)(gripValue * speed * Time.deltaTime), 0);
+    }
+
+    void AlignPlayerToChair()
+    {
+        player.transform.position = new Vector3(ObjectToSpin.transform.position.x, player.transform.position.y, ObjectToSpin.transform.position.z - 0.3f);
+        player.transform.rotation = ObjectToSpin.transform.rotation;
     }
 }
