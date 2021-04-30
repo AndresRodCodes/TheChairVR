@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerSM : StateMachine
 {
+    private State _currentState;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,11 @@ public class PlayerSM : StateMachine
 
     public void OnEnterChair()
     {
-        StartCoroutine(State.OnChair());
+        StartCoroutine(_currentState.OnChair());
+    }
+
+    public void OnExitChair()
+    {
+        StartCoroutine(_currentState.GameOver());
     }
 }
